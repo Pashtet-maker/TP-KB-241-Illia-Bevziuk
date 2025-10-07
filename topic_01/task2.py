@@ -1,15 +1,15 @@
 s = "   Hello Igor   "
 print(s.strip())
-print("...Igor...".strip("."));
+print("...Igor...".strip(".")),
 
 s = "hELLO IGOR"
-print(s.capitalize());
+print(s.capitalize()),
 
 s = "hello igor"
-print(s.title());
+print(s.title()),
 
 s = "Hello Igor"
-print(s.upper());
+print(s.upper()),
 
 s = "Hello Igor"
-print(s.lower());
+print(s.lower()),
