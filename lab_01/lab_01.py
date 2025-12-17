@@ -1,8 +1,8 @@
 list = [
-    {"name": "Bob", "phone": "0631234567", "address": "Victory St., 34a", "date": "12.11.2001"},
-    {"name": "Emma", "phone": "0638888888", "address": "Wall St., 9", "date": "9.09.2002"},
-    {"name": "Jon", "phone": "0635555555", "address": "Broadway St., 7d", "date": "14.04.2001"},
-    {"name": "Zak", "phone": "0630000000", "address": "Greenwich St., 13c", "date": "03.08.2004"}
+    {"name": "Bob", "phone": "0667834567", "address": "Victory St., 54a", "date": "12.11.2014"},
+    {"name": "Emma", "phone": "0638888888", "address": "Wall St., 19", "date": "9.09.2004"},
+    {"name": "Jon", "phone": "0635578455", "address": "Broadway St., 34d", "date": "14.04.2005"},
+    {"name": "Zak", "phone": "0633345000", "address": "Greenwich St., 55c", "date": "03.08.2011"}
 ]
 
 
