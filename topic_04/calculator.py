@@ -1,4 +1,3 @@
-# --- Функции арифметических операций ---
 def add(a, b):
     return a + b
 
@@ -9,42 +8,40 @@ def multiply(a, b):
     return a * b
 
 def divide(a, b):
-    # Обработка исключения деления на ноль
     try:
         return a / b
     except ZeroDivisionError:
-        print("Ошибка: деление на ноль невозможно!")
+        print("Помилка ділення на 0 неможливе!")
         return None
 
 
-# --- Функция безопасного ввода чисел ---
 def get_number(prompt):
     while True:
         try:
             return float(input(prompt))
         except ValueError:
-            print("Ошибка: введите корректное число!")
+            print("Помилка введіть коректне число!")
 
 
-# --- Основная программа ---
+
 def calculator():
-    print("=== Калькулятор с обработкой исключений ===")
-    print("Доступные операции: +, -, *, /")
-    print("Для выхода введите 'exit'\n")
+    print("=== Калькулятор з обробкою вийнятків ===")
+    print("Доступні операції: +, -, *, /")
+    print("Для вихіда натисніть 'exit'\n")
 
     while True:
         try:
-            op = input("Выберите операцию (+, -, *, /): ").strip()
+            op = input("Виберіть операцію (+, -, *, /): ").strip()
 
             if op.lower() == 'exit':
-                print("Завершение работы программы.")
+                print("Завершення роботи програми.")
                 break
 
             if op not in ['+', '-', '*', '/']:
-                raise ValueError("Неизвестная операция!")
+                raise ValueError("Невідома операція!")
 
-            a = get_number("Введите первое число: ")
-            b = get_number("Введите второе число: ")
+            a = get_number("Введіть перше число: ")
+            b = get_number("Введіть друге число: ")
 
             if op == '+':
                 result = add(a, b)
@@ -61,9 +58,11 @@ def calculator():
         except ValueError as ve:
             print(ve)
         except Exception as e:
-            print(f"Неизвестная ошибка: {e}")
+            print(f"Невідома помилка: {e}")
+            
+            if name == "__main__":
+    calculator()
 
 
-# --- Запуск программы ---
 if __name__ == "__main__":
     calculator()
