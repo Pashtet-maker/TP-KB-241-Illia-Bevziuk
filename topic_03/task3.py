@@ -16,8 +16,8 @@ party.clear()
 print(party)
 
 party={
-    "date":"31.10.27",
-    "name":"Halloween",
+    "date":"01.01.2026",
+    "name":"Apocalypse",
     "dress_code":"costumes"
 }
 
