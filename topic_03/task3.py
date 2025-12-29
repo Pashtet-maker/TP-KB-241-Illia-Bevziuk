@@ -1,12 +1,12 @@
 party={
-    "date":"31.10.27",
-    "name":"Halloween",
+    "date":"01.01.2026",
+    "name":"Apocalypse",
     "dress_code":"costumes"
 }
 
 print(party)
 
-party.update({"Where":"Vegas"})
+party.update({"Where":"NewVegasFallout"})
 print(party)
 
 del party["date"]
